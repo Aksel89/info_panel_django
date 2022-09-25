@@ -1,0 +1,65 @@
+{% extends 'info_panel/base.html' %}
+{% load static %}
+
+    {% block menu %}
+    <body class="container">
+        <header class="header">
+            <div class="logo">
+                <a href=""><img class="header" src="{% static 'img/logo.png' %}" alt="Логотип" width="230" height="100"></a>
+            </div>
+            <div class="btn-pref">
+                <a href="{% url 'index_eng' %}"><img src="{% static 'img/flageng.png' %}" alt="Логотип" width="125" height="125"></a>
+            </div>
+        </header>
+    {% endblock %}
+
+
+        {% block content %}
+        <div class="main_menu_up">
+            <article>
+                <figure class="main-button">
+                    <a href="{% url 'lessons' %}"><img class="image"
+                                                      src="{% static '/img/BtnLesRus.png' %}"
+                                                      alt="Тематические занятия"
+                                                      width="335" height="325"></a>
+                </figure>
+                <figure class="main-button">
+                    <a href="{% url 'mappesh' %}"><img src="{% static '/img/BtnMapRus.png' %}"
+                                                      alt="Карта пешехода"
+                                                      width="335" height="325"></a>
+                </figure>
+                <figure class="main-button">
+                    <a href="{% url 'metro' %}"><img src="{% static '/img/BtnMetroRus.png' %}"
+                                                    alt="Метро" width="335"
+                                                    height="325"></a>
+                </figure>
+                <figure class="main-button">
+                    <a href="{% url 'taxi' %}"><img src="{% static '/img/BtnTaxiRus.png' %}"
+                                                   alt="Такси" width="335"
+                                                   height="325"></a>
+                </figure>
+            </article>
+            <article class="main_menu_dowm">
+                <figure>
+                    <a href="{% url 'partners' %}"><img src="{% static '/img/BtnPartnersRus.png' %}"
+                                                       alt="Партнеры" width="335"
+                                                       height="325"></a>
+                </figure>
+                <!-- <figure>
+                    <a href="/site/Sale.html"><img src="/img/sale2.png" alt="Скидка" width="335" height="325"></a>
+                </figure> -->
+                <figure>
+                    <a href="{% url 'sale' %}"><img src="{% static '/img/sale2.png' %}" alt="Скидка" width="335" height="325"></a>
+                </figure>
+
+            </article>
+        </div>
+        <figure class="click">
+            <img src="{% static '/img/click.gif' %}"  alt="Партнеры" width="200" height="200">
+        </figure>
+        {% endblock %}
+
+        {% block footer %}
+
+{% endblock %}
+</body>

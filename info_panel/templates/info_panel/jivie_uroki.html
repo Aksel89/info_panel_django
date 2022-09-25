@@ -1,0 +1,63 @@
+{% load static %}
+<head>
+    <title>Живые уроки</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" title="style"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body class="container jivieUroki">
+{% block menu %}
+<header class="header sec_menu">
+    <div class="logo">
+        <a href="{% url 'home' %}"><img src="{% static '/img/logo.png' %}" alt="Логотип" width="230" height="100"></a>
+    </div>
+    <div class="btn-pref">
+        <a href="{% url 'lessons' %}"><img src="{% static '/img/BtnPrev.png' %}" alt="Логотип"></a>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<body class="container jivieUroki">
+<div class="jivieUroki_menu">
+    <div class="jivieUroki_head">
+        <div class="jivieUroki_text text">
+            <p><br><br>"Живые уроки" - тематические занятия <br>
+                для 1-9 классов.  <br>
+                В настоящее время музей "Гранд Макет Россия" <br>
+                предлагает следующие программы:</p>
+        </div>
+        <div class="jivieUroki_head">
+            <img class="image" src="{% static '/img/les/uroki.jpg' %}"  alt="FotoUroki" width="520" height="340"></a>
+        </div>
+        {#            <div class="jivieUroki_head text">#}
+        {#                <h3>Занятия разработаны<br> совместно с отделом <br>образования Московского<br> района и одобрены<br> Комитетом по образованию <br>Санкт-Петербурга</h3>#}
+        {#            </div>#}
+    </div>
+    <div class="jivieUroki_batton">
+        <a href="{% url 'dostoprim' %}"><img class="image" src="{% static '/img/les/Dostoprim.png' %}"  alt="Живые уроки" width="800" height="80"></a>
+    </div>
+    <div class="jivieUroki_batton">
+        <a href="{% url 'atlas' %}"><img class="image" src="{% static '/img/les/AtlasProfessij.png' %}"  alt="Живые уроки" width="800" height="80"></a>
+    </div>
+    <div class="jivieUroki_batton">
+        <a href="{% url 'kak_eto_sdelano' %}"><img class="image" src="{% static '/img/les/KakEtoSdelanno.png' %}"  alt="Живые уроки" width="800" height="80"></a>
+    </div>
+    <div class="jivieUroki_head text">
+        <p>Подробности по телефону: +7(931)002-93-57, +7(812)495-54-65</p>
+    </div>
+</div>
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
+</body>

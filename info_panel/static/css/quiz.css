@@ -1,0 +1,102 @@
+
+/* 
+    fonts
+*/
+
+@font-face{
+
+   font-family: 'Lobster';
+   src: url(/static/fonts/Lobster-Regular.ttf);
+
+   }
+
+
+/* 
+    Style
+*/
+
+
+.text {
+   color: #6ae1fe;
+   font-family: Lobster;
+}
+
+.wrapper
+{
+   width: 100%;
+   height: 100%;
+   display: table;
+}
+ 
+.main
+{
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+}
+ 
+.quiz-frame
+{
+   border: 0;
+   box-shadow: 0 0 10px rgba(167, 154, 154, 0.5);
+   
+}
+ 
+.quiz__head
+{
+   font-size: 20pt;
+   margin: 10px;
+   margin-bottom: 50px;
+}
+ 
+.head__content
+{
+   padding: 5px;
+}
+ 
+.quiz__body
+{
+   margin: 10px;
+}
+ 
+.quiz__footer
+{
+   /* position: absolute; */
+   bottom: 0;
+   display: block;
+   width: 100%;
+}
+ 
+.footer__content
+{
+   padding: 5px;
+}
+ 
+.button
+{
+   border: 0;
+   border-radius: 10px;
+   background: #6477EB;
+   color: rgb(184, 19, 19);
+   padding: 10px 25px;
+   width: 50%;
+   font-size: 15pt;
+   display: block;
+   margin: 2px auto;
+   cursor: pointer;
+}
+ 
+.button_wrong
+{
+   background: #EB6465;
+}
+ 
+.button_correct
+{
+   background-color: #5EB97D;
+}
+ 
+.button_passive
+{
+   background: #B3B3B3;
+}

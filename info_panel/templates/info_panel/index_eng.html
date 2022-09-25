@@ -1,0 +1,51 @@
+{% load static %}
+
+<head>
+    <title>Тематические занятия</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" title="style"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<body class="container">
+    <header class="header">
+        <<div class="logo">
+                <a href="{% url 'index_eng' %}"><img class="header" src="{% static 'img/logo.png' %}" alt="Логотип" width="230" height="100"></a>
+            </div>
+            <div class="btn-pref">
+                <a href="{% url 'home' %}"><img src="{% static 'img/flagrus.png' %}" alt="Логотип" width="125" height="125"></a>
+            </div>
+    </header>
+    <div class="main_menu_up">
+    <article>
+        <figure class="main-button">
+            <a href="{% url 'mappesh_eng' %}"><img src="{% static 'img/eng/BtnMapEng.png' %}"  alt="Map" width="335" height="325"></a>
+        </figure>
+        <figure class="main-button">
+            <a href="{% url 'metro_eng' %}"><img src="{% static 'img/eng/BtnMetroEng.png' %}"  alt="Metro" width="335" height="325"></a>
+        </figure>
+        <figure class="main-button">
+            <a href="{% url 'taxi_eng' %}"><img src="{% static 'img/eng/BtnTaxiEng.png' %}"  alt="Taxi" width="335" height="325"></a>
+        </figure>
+    </article>
+    <article class="main_menu_dowm">
+        <figure class="main-button">
+            <img src="{% static 'img/click.gif' %}"  alt="" width="200" height="200">
+        </figure>
+
+    </article>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>

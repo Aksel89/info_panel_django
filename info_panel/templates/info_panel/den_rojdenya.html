@@ -1,0 +1,56 @@
+{% load static %}
+<head>
+    <title>День рождения</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" title="style"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<body class="container denRojdenya">
+
+<header class="header sec_menu">
+    <div class="logo">
+        <a href="{% url 'home' %}"><img src="{% static '/img/logo.png' %}" alt="Логотип" width="230" height="100"></a>
+    </div>
+    <div class="btn-pref">
+        <a href="{% url 'lessons' %}"><img src="{% static '/img/BtnPrev.png' %}" alt="Логотип"></a>
+    </div>
+</header>
+
+<div class="main_menu_up">
+    <div class="denRojdenya_head">
+        <div class="denRojdenya_menu">
+            <div class="denRojdenya_text text">
+                <p>В нашем музее вы сможете отпраздновать <br>день рождения вашего ребенка.<br><br>
+                    Увлекательная игра-квест порадует детей и сделает <br>Ваш праздник запоминающимся.
+                    <br>Отгадывая ребусы, именинник и его друзья найдут<br> самых загадочных героев на макете.
+                    <br>Для того, чтобы праздник оказался не только веселым,<br> но и вкусным, в музее
+                    работает уютное кафе<br> с возможностью предварительного заказа<br> специального меню.
+                </p>
+            </div>
+            <div>
+<!--                <video src="/video/hp.mp4" width="800" height="600" preload="auto" autoplay></video>-->
+                <video name='demo' controls  width='640' height='480' preload="auto" autoplay>
+                    <source src="{% static 'media/video/hp.mp4' %}" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="denRojdenya_head text">
+            <p>Подробности по телефону: +7(931)002-93-57, +7(812)495-54-65</p>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</div>
+
+</body>

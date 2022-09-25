@@ -1,0 +1,59 @@
+{% load static %}
+
+<head>
+    <title>Атлас профессий</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" title="style"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<body class="container atlasProfessij">
+    <header class="header sec_menu">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img src="{% static '/img/logo.png' %}" alt="Логотип" width="230" height="100"></a>
+        </div>
+        <div class="btn-pref">
+            <a href="{% url 'jivie_uroki' %}"><img src="{% static '/img/BtnPrev.png' %}" alt="Логотип"></a>
+        </div>
+    </header>
+    <div class="atlasProfessij_head">
+        <div class="atlasProfessij_menu">
+
+            <div class="atlasProfessij_menu text_atlas">
+                <p>
+                    Уникальное по своей форме занятие
+                    для
+                    учеников 5-9 классов.<br>
+                    Учащиеся работают группами, проходят маршрут по музейной<br>
+                    экспозиции под руководством экскурсовода музея. Маршрутные<br>
+                    листы с элементами ребусов и загадок позволяют участникам<br>
+                    проявить активность и творческие способности. В ходе занятия<br>
+                    ученики узнают о профессиях, связанных с уникальными<br>
+                    особенностями регионов России. Игра-путешествие носит<br>
+                    профориентационную направленность.<br><br>
+                    Длительность занятия: 75 минут
+                </p>
+            </div>
+            <div class="atlasProfessij_menu">
+                <img class="image" src="{% static '/img/les/atlasProfMenu.jpg' %}" alt="Живые уроки" width="570" height="370">
+            </div>
+        </div>
+        <div class="text_atlas">
+            <p>Занятие разработано совместно с отделом образования Московского района и одобрено Комитетом по
+                образованию Санкт-Петербурга.</p>
+            <p class="atlasProfessij_text">Подробности по телефону: +7(931)002-93-57, +7(812)495-54-65</p>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>

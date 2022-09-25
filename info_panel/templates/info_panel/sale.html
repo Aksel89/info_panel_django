@@ -1,0 +1,68 @@
+{% load static %}
+
+<head>
+    <title>Получить скидку</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" title="style"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<body class="container sale">
+
+    <div class="discount-box">
+        <form action="../scripts/create.php" method="post">
+
+            <h2>СКИДКА</h2>
+            <div class="user-box">
+                <label for="first_name">Имя:</label><br />
+                <br>
+                <input type="text" name="first_name" size="30"><br />
+            </div>
+            <div class="user-box">
+                <label for="last_name">Фамилия:</label><br />
+                <br>
+                <input type="text" name="last_name" size="30"><br />
+            </div>
+            <div class="user-box">
+                <label for="patronymic">Отчество:</label><br />
+                <br>
+                <input type="text" name="patronymic" size="30"><br />
+            </div>
+            <div class="user-box">
+                <label for="email">Email:</label><br />
+                <br>
+                <input type="text" name="email" size="30"><br />
+            </div>
+            <div class="user-box">
+                <label for="phone">Телефон:</label><br />
+                <br>
+                <input type="text" name="phone" size="30"><br />
+            </div>
+<!--            <a href="input">-->
+<!--                <span></span>-->
+<!--                <span></span>-->
+<!--                <span></span>-->
+<!--                Отправить данные.-->
+<!--            </a>-->
+<!--            <fieldset>-->
+<!--                <input type="submit" id="input" value="Отправить данные"><br />-->
+<!--            </fieldset>-->
+
+            <button class="neon-btn neon-btn--blue">Получить QR со скидкой</button><br>
+<!--                <input type="submit" id="input" value="й"><br>-->
+
+        </form>
+    </div>
+
+</body>

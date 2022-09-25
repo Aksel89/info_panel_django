@@ -1,0 +1,54 @@
+{% load static %}
+<head>
+   <title>Квесты</title>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" title="style"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+    {% block menu %}
+    {% endblock %}
+
+    {% block content %}
+        <body class="container kvesti">
+    <header class="header sec_menu">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img src="{% static '/img/logo.png' %}" alt="Логотип" width="230" height="100"></a>
+        </div>
+        <div class="btn-pref">
+            <a href="{% url 'lessons' %}"><img src="{% static '/img/BtnPrev.png' %}" alt="Логотип"></a>
+        </div>
+    </header>
+    <div class="kvesti_head">
+        <div class="kvesti_menu kvesti_img1">
+            <div>
+                <img src="{% static '/img/les/quest2.jpg' %}"  alt="Живые уроки" width="520" height="340">
+            </div>
+            <div class="kvesti_text text">
+                <p>В сопровождении сотрудников музея<br> Вы заглянете в потаённые уголки<br>
+                     макета и узнаете секреты экспозиции.<br>
+                     Забронировать время посещения<br>
+                     необходимо заблаговременно.</p>
+            </div>
+        </div>
+        <div class="kvesti_menu">
+            <div class="kvesti_img2">
+                <img src="{% static '/img/les/quest1.jpg' %}"  alt="Живые уроки" width="520" height="340">
+            </div>
+            <div class="kvesti_text text">
+                <p>Самостоятельно изучить макет и <br>разгадать загадки мультяшных<br> героев Вы сможете,
+                    если<br> приобретёте маршрутный буклет<br>
+                    в сервис-центре музея.</p>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+        <h4>Музей «Гранд Макет Россия» © 2020</h4>
+    </footer> -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+    {% endblock %}

@@ -1,0 +1,63 @@
+{% load static %}
+
+<head>
+    <title>Как это сделано</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" title="style"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<body class="container kakEtoSdelanno">
+    <header class="header sec_menu">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img src="{% static '/img/logo.png' %}" alt="Логотип" width="230" height="100"></a>
+        </div>
+        <div class="btn-pref">
+            <a href="{% url 'jivie_uroki' %}"><img src="{% static '/img/BtnPrev.png' %}" alt="Логотип"></a>
+        </div>
+    </header>
+    <div class="kakEtoSdelanno_head">
+        <div>
+            <p class="kakEtoSdelanno_text text">
+
+            </p>
+        </div>
+        <div class="kakEtoSdelanno_menu">
+            <div class="kakEtoSdelanno_menu text">
+                <p>
+                    Интерактивные элементы экскурсии помогут учащимся <br>
+                    3-5 классов узнать историю возникновения <br>
+                    железнодорожного транспорта в России.<br>
+                    Ученикам рассказывают о знаменитых русских мастерах<br>
+                    и первой железной дороге в России. На примере модели<br>
+                    уникального железнодорожного пути с движущимися поездами,<br>
+                    стрелками и обменниками дети знакомятся с устройством<br>
+                    современного железнодорожного транспорта.<br><br>
+                    Длительность занятия: 60 минут
+                </p>
+            </div>
+            <div class="kakEtoSdelanno_menu">
+                <img class="image" src="{% static 'img/les/kakEtoSdelmenu.jpg' %}"  alt="Живые уроки" width="520" height="340">
+            </div>
+        </div>
+        <div class="text">
+                <p>Занятие разработано совместно с отделом образования Московского района и одобрено Комитетом по образованию Санкт-Петербурга.</p>
+                <p class="kakEtoSdelanno_text">Подробности по телефону: +7(931)002-93-57, +7(812)495-54-65</p>
+        </div>
+    </div>
+    <!-- <footer>
+        <h4>Музей «Гранд Макет Россия» © 2020</h4>
+    </footer> -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
